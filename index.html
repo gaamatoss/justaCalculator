@@ -5,39 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Just a calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-        <h1>Just a calculator</h1>
+<body class="bg-indigo-500 w-full">
+    <header class="w-full text-center mt-5 mb-5">
+        <h1 class="text-4xl text-white font-bold">Just a calculator</h1>
     </header>
-    <main>
+    <main class="w-full flex justify-center items-center">
         <section>
-            <div class="visor"></div>
+            <div class="visor w-full h-10 bg-white mb-5"></div>
             <div class="buttons">
-                <button>0</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <button class="ce">ce</button>
+                <button class="=">=</button>
+                <button class="7">7</button>
+                <button class="8">8</button>
+                <button class="9">9</button>
+                <button class="/">/</button>
+                <button class="4">4</button>
+                <button class="5">5</button>
+                <button class="6">6</button>
+                <button class="*">*</button>
+                <button class="1">1</button>
+                <button class="2">2</button>
+                <button class="3">3</button>
+                <button class="-">-</button>
+                <button class="0">0</button>
+                <button class="+">+</button>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="fixed bottom-0 w-full bg-white opacity-80 p-3 text-center">Develop with <3 by Gabriel Matos</footer>
 </body>
 
 </html>
