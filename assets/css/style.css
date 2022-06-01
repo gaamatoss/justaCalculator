@@ -17,13 +17,13 @@ body {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr  1fr 1fr 1fr;
-      grid-template-columns: 1fr  1fr 1fr 1fr;
-  -ms-grid-rows: 1fr  1fr 1fr 1fr;
-      grid-template-rows: 1fr  1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.btn__value, .btn__simbol {
+.btn__value, .btn__simbol, .equal {
   width: 100px;
   height: 100px;
   font-size: 2.5rem;
