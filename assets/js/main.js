@@ -1,54 +1,46 @@
-let btnValue = document.querySelectorAll(".btn__value")
-let btnOperation = document.querySelectorAll(".btn__simbol")
-let visor = document.querySelector(".input__val")
-let cleanVisor = document.querySelector(".btnDel")
-let equal = document.querySelector('.equal')
+const btnValue = document.querySelectorAll(".btn__value")
+const btnOperation = document.querySelectorAll(".btn__simbol")
+const visorCalc = document.querySelector(".input__val")
+const cleanVisor = document.querySelector(".btnDel")
+const cleanStr = document.querySelector(".btnDel__str")
+const equal = document.querySelector('.equal')
 
 
 cleanVisor.addEventListener("click", function () {
-    visor.value = ""
+    visorCalc.value = ""
+    // let visorValue = visorCalc.innerHTML
+    // visorValue.substring(0, visorValue.length - 1)
+})
+
+cleanStr.addEventListener("click", function () {
+    // console.log('clicado');
+    let visorValue = visorCalc.value
+    visorCalc.value = visorValue.substring(0, visorValue.length - 1)
+    // console.log(visorValue.substring(0, visorValue.length - 1))
 })
 
 equal.addEventListener("click", function () {
-    console.log(visor.value);
-    operationCalc(operationType);
+    if (visorCalc.value.length == 0) {
+        console.log('Digite alguma expressao');
+    } else {
+        let valueCalc = visorCalc.value
+        let result = eval(valueCalc)
+        visorCalc.value = result
+        console.log(result);
+    }
 })
 
-for (let i = 0; i < btnValue.length; i++) {
-    const tecla = btnValue[i]
-    tecla.onclick = (e) => {
+btnValue.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
         valType = e.target.textContent;
-        visor.value = `${visor.value}` + `${valType}`;
-    }
-}
+        visorCalc.value = `${visorCalc.value}` + `${valType}`;
+    })
+})
 
-for (let i = 0; i < btnOperation.length; i++) {
-    const tecla = btnOperation[i]
-    tecla.onclick = (e) => {
-        operationType = e.target.textContent;
-        if (operationType == '+') {
-            operationCalc(operationType);
-        } else if (operationType == '-') {
-            operationCalc(operationType);
-        } else if (operationType == '*') {
-            operationCalc(operationType);
-        } else {
-            operationCalc(operationType);
-        }
-    }
-}
-
-
-function operationCalc(operationType) {
-    // let operationVal = []
-    // let firstOp = visor.value + operationType
-    // console.log("1: " + firstOp);
-    // visor.value = ""
-
-    // let secondOp = visor.value
-    // console.log("2: " + secondOp);
-    // let soma = a + b
-    // console.log(soma);
-
-
+function soma() {
+    let op = []
+    let op1 = visorCalc.value
+    op.push(op1)
+    visorCalc.value = ""
+    console.log(op);
 }

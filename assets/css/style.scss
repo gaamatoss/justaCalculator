@@ -11,15 +11,21 @@ html {
     margin: 0;
     padding: 5em 0 2em;
     text-align: center;
+    width: 100%;
   }
   
   .calculator {
       width: 500px;
-      height: 500px;
       margin: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      margin-bottom: 2rem;
+      .input__val{
+        width: 24rem;
+        height: 5rem;
+        font-size: 50px;
+    }
+      // display: grid;
+      // grid-template-columns: 1fr 1fr 1fr 1fr;
+      // grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 
   .btn__value, .btn__simbol, .equal{
@@ -29,11 +35,12 @@ html {
     font-weight: bold;
 }
 
+.ini {
+  width: 220px;
+  height: 100px;
+}
+
 .visor {
     margin-bottom: 2rem;
-    .input__val{
-        width: 24rem;
-        height: 5rem;
-        font-size: 50px;
-    }
+    
 }

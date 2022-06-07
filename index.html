@@ -14,47 +14,78 @@
     <header class="w-full text-center mb-5">
         <h1 class="text-4xl text-white font-bold">Just a calculator</h1>
     </header>
-    <main class="w-4/5 m-auto">
+    <main class="w-4/5 m-auto ">
         <section>
-            <div class="visor flex justify-center">
+            <div class="calculator">
                 <input type="text" class="input__val rounded-md text-right bg-opacity-50 p-3 bg-gray-800 text-white"
                     disabled />
-                <button class="btnDel rounded-xl text-white w-1/7 bg-indigo-500 p-3 m-2 
-                drop-shadow-xl hover:opacity-80 duration-200 active:drop-shadow-none duration-150">CE</button>
-            </div>
-            <div class="calculator">
-                <button
-                    class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">7</button>
-                <button
-                    class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">8</button>
-                <button
-                    class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">9</button>
-                <button
-                    class="btn__simbol divider rounded-xl text-white bg-indigo-500 bg-opacity-40 m-2 hover:opacity-80 duration-200">/</button>
-                <button
-                    class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">4</button>
-                <button
-                    class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">5</button>
-                <button
-                    class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">6</button>
-                <button
-                    class="btn__simbol multiply rounded-xl text-white bg-indigo-500 bg-opacity-40 m-2 hover:opacity-80 duration-200">*</button>
-                <button
-                    class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">1</button>
-                <button
-                    class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">2</button>
-                <button
-                    class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">3</button>
-                <button
-                    class="btn__simbol minus rounded-xl text-white bg-indigo-500 bg-opacity-40 m-2 hover:opacity-80 duration-200">-</button>
-                <button
-                    class="btn__value rounded-xl text-white bg-indigo-500 bg-opacity-40 m-2 hover:opacity-80 duration-200">.</button>
-                <button
-                    class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">0</button>
-                <button
-                    class="btn__simbol plus rounded-xl text-white bg-indigo-500 bg-opacity-40 m-2 hover:opacity-80 duration-200">+</button>
-                <button
-                    class="equal rounded-xl text-white bg-red-500 bg-opacity-40 m-2 hover:opacity-80 duration-200">=</button>
+
+                <button class="btnDel__str rounded-xl text-white w-1/6 bg-indigo-500 p-3 m-2 
+                drop-shadow-xl hover:opacity-80 duration-200 active:drop-shadow-none duration-150">
+                    ce </button>
+                <table>
+                    <tr>
+                        <td colspan="2"><button
+                                class="btnDel ini rounded-xl text-2xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">AC</button>
+                        </td>
+                        <td colspan="2"><button
+                                class="equal ini rounded-xl text-white bg-red-500 bg-opacity-40 m-2 hover:opacity-80 duration-200">=</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=""><button
+                                class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">7</button>
+                        </td>
+                        <td> <button
+                                class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">8</button>
+                        </td>
+                        <td><button
+                                class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">9</button>
+                        </td>
+                        <td><button
+                                class="btn__value divider rounded-xl text-white bg-indigo-500 bg-opacity-40 m-2 hover:opacity-80 duration-200">/</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=""><button
+                                class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">4</button>
+                        </td>
+                        <td> <button
+                                class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">5</button>
+                        </td>
+                        <td><button
+                                class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">6</button>
+                        </td>
+                        <td><button
+                                class="btn__value divider rounded-xl text-white bg-indigo-500 bg-opacity-40 m-2 hover:opacity-80 duration-200">*</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=""><button
+                                class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">1</button>
+                        </td>
+                        <td> <button
+                                class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">2</button>
+                        </td>
+                        <td><button
+                                class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">3</button>
+                        </td>
+                        <td><button
+                                class="btn__value divider rounded-xl text-white bg-indigo-500 bg-opacity-40 m-2 hover:opacity-80 duration-200">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button
+                                class="btn__value ini rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">0</button>
+                        </td>
+                        <td> <button
+                                class="btn__value rounded-xl text-white bg-indigo-500 m-2 hover:opacity-80 duration-200">.</button>
+                        </td>
+                        <td><button
+                                class="btn__value rounded-xl text-white bg-indigo-500 bg-opacity-40 m-2 hover:opacity-80 duration-200">+</button>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </section>
     </main>

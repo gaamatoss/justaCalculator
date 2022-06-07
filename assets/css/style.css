@@ -9,18 +9,19 @@ body {
   margin: 0;
   padding: 5em 0 2em;
   text-align: center;
+  width: 100%;
 }
 
 .calculator {
   width: 500px;
-  height: 500px;
   margin: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-bottom: 2rem;
+}
+
+.calculator .input__val {
+  width: 24rem;
+  height: 5rem;
+  font-size: 50px;
 }
 
 .btn__value, .btn__simbol, .equal {
@@ -30,13 +31,12 @@ body {
   font-weight: bold;
 }
 
-.visor {
-  margin-bottom: 2rem;
+.ini {
+  width: 220px;
+  height: 100px;
 }
 
-.visor .input__val {
-  width: 24rem;
-  height: 5rem;
-  font-size: 50px;
+.visor {
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
